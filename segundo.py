@@ -15,23 +15,23 @@ def divisao(a, b):
 
 def calculadora():
     print("Escolha uma operação:")
-    print("1. Soma")
-    print("2. Subtração")
-    print("3. Multiplicação")
-    print("4. Divisão")
+    print("a. Soma")
+    print("b. Subtração")
+    print("c. Multiplicação")
+    print("d. Divisão")
     
-    operacao = input("Digite o número da operação (1/2/3/4): ")
+    operacao = input("Digite o número da operação (a/b/c/d): ")
     
     num1 = float(input("Digite o primeiro número: "))
     num2 = float(input("Digite o segundo número: "))
     
-    if operacao == '1':
+    if operacao == 'a':
         print(f"Resultado: {soma(num1, num2)}")
-    elif operacao == '2':
+    elif operacao == 'b':
         print(f"Resultado: {subtracao(num1, num2)}")
-    elif operacao == '3':
+    elif operacao == 'c':
         print(f"Resultado: {multiplicacao(num1, num2)}")
-    elif operacao == '4':
+    elif operacao == 'd':
         print(f"Resultado: {divisao(num1, num2)}")
     else:
         print("Operação inválida!")
